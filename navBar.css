@@ -1,0 +1,59 @@
+*{
+    color: black;
+    font-family: 'Oxygen';
+    font-style: normal;
+    font-weight: 400;
+}
+
+html{
+    background: white;
+    background-image: linear-gradient(to right, #ffffff 0%, #bac9ea 100%);}
+
+header{
+    border-bottom: 2px solid black;
+    overflow: clip;
+}
+
+header img{
+    padding: 0px 10px;
+}
+header a{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 25px;
+    padding: 10px;
+    float: right;
+}
+
+header a:hover{
+    font-size: 21px;
+}
+
+header #selected{
+    color: blue;
+}
+
+header #ResumeSelected{
+    color: blue;
+    margin-top: 17.5px;
+    margin-bottom: 17.5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+header #resume{
+    margin-top: 17.5px;
+    margin-bottom: 17.5px;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
