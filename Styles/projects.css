@@ -1,0 +1,68 @@
+header #selected{
+    color: blue;
+}
+
+
+body h1{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    padding-top: 0px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+body h2, h3{
+    padding: 0px 20px;
+}
+body h2{
+    padding-top: 10px;
+}
+body a{
+    padding: 2%;
+}
+#phoneHolder{
+    padding-top: 10px;
+}
+#brew{
+    padding-left: 3.5%;
+}
+.container{
+    padding-top: 0px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+p{
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 28px;
+    line-height: 40px;
+}
+#floated{
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: 0px;
+    float: left;
+}
+#floatedRight{
+    width: 300px;
+    padding-right: 20px;
+    margin-right: 0px;
+    float: right;
+
+}
+#floatedLeft{
+    width: 300px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: 0px;
+    float: left;
+
+}
+#alexaCarImg{
+    padding: 20px;
+    float: left;
+}
