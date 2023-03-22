@@ -1,0 +1,50 @@
+body h1{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    padding-top: 0px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.container{
+    padding-top: 0px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+p{
+    text-indent: 0px;
+    font-size: 1.5625em;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 33px;
+}
+#floated{
+    width: 310px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: 0px;
+    float: left;
+}
+#floatedRight{
+    width: 314px;
+    padding-right: 20px;
+    margin-right: 0px;
+    float: right;
+
+}
+/* Media queries for even smaller screens */
+@media screen and (max-width: 700px) {
+    #floated{
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #floatedRight{
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

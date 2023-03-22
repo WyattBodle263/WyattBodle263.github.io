@@ -1,0 +1,96 @@
+
+body h1{
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    padding-top: 0px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+body h2, h3{
+    padding: 0px 20px;
+}
+body h2{
+    padding: 20px;
+    font-weight: bold;
+}
+body a{
+    text-align: center;
+}
+#phoneHolder{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    justify-content: center;
+}
+#brew{
+    padding-left: 3.5%;
+}
+.container{
+    padding-top: 0px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+p{
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 28px;
+    line-height: 40px;
+}
+#floated{
+    width: 350px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: 0px;
+    float: left;
+}
+#floatedRight{
+    width: 350px;
+    padding-right: 20px;
+    margin-right: 0px;
+    float: right;
+
+}
+#floatedLeft{
+    width: 350px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: 0px;
+    float: left;
+
+}
+#alexaCarImg{
+    padding: 20px;
+    float: left;
+}
+
+@media only screen and (max-width: 600px) {
+    h1, h2, h3{
+        text-align: center;
+    }
+    #floated, #floatedLeft, #floatedRight{
+        margin-right: auto;
+        margin-left: auto;
+        width: 90%;
+    }
+    .roboticsimg{
+        width: 100%;
+    }
+    #alexaCarImg{
+        width: 90%;
+    }
+    #phoneHolder{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        justify-content: center;
+    }
+    #phoneHolder img{
+        width: 70%;
+    }
+}

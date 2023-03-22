@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Resume</title>
-  <link rel="stylesheet" href="Styles/Resume.css">
+  <link rel="stylesheet" href="Styles/resume.css">
   <link rel="stylesheet" href="Styles/navBar.css">
   <link rel="stylesheet" href="Styles/Normalize.css">
-  <link rel="icon" href="images/Comp.png">
 
 </head>
-<header>
-  <div class="navbar">
-    <img src="images/Comp.png" alt="WyattBodleImg" width="60px">
-    <a id="ResumeSelected" id="resume" href="Resume.html">Resume</a>
-    <a href="AboutMe.html">About Me</a>
-    <a href="WorkExperience.html">Work Experience</a>
-    <a href="Projects.html">Projects</a>
-    <a href="index.html">Home</a>
+<!-- Navigation Bar -->
+<nav class="resume">
+  <div class="logo">
+    Wyatt Bodle
   </div>
-</header>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="AboutMe.html">About Me</a></li>
+    <li><a href="WorkExperience.html">Work Experience</a></li>
+    <li><a href="Resume.html" class="selected">Resume</a></li>
+  </ul>
+</nav>
 <div>
   <button class="print-button" onclick="window.print()"><span class="print-icon"></span></button>
 

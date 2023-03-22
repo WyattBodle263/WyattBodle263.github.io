@@ -1,0 +1,38 @@
+
+
+body h1, h2, h3{
+    text-align: center;
+}
+body h1{
+    margin: 5px;
+    padding: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+}
+body h2{
+    margin: 5px;
+    padding-top: 10px;
+    font-weight: 550;
+    font-size: 36px;
+    line-height: 45px;
+}
+body h3{
+    margin: 5px;
+    padding: 0px;
+    font-weight: 450;
+    font-size: 24px;
+    line-height: 30px;
+}
+body .workExp ul{
+    margin: 5px;
+    padding-top: 10px;
+    font-size: 22px;
+    line-height: 28px;
+
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.workExp li:not(:last-child) {
+    margin-bottom: 10px;
+}
