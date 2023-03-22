@@ -81,3 +81,26 @@ nav .resume {
         margin: 10px 0;
     }
 }
+@media only screen and (max-width: 500px) {
+    /* Nav bar styles */
+    nav {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav a {
+        padding: 0px 5px;
+    }
+
+    nav ul {
+        margin: 5px 0;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    nav .resume {
+        margin: 5px 0;
+    }
+}

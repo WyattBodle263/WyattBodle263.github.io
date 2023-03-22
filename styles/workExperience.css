@@ -1,4 +1,6 @@
-
+body{
+    padding: 0 20px;
+}
 
 body h1, h2, h3{
     text-align: center;
@@ -29,9 +31,11 @@ body .workExp ul{
     padding-top: 10px;
     font-size: 22px;
     line-height: 28px;
-
     padding-left: 10%;
     padding-right: 10%;
+}
+.workExp li{
+    text-align: left;
 }
 .workExp li:not(:last-child) {
     margin-bottom: 10px;
