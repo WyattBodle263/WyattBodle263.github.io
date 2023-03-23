@@ -1,3 +1,6 @@
+body{
+    text-align: center;
+}
 #backbutton{
     background: lightgray;
 }
@@ -26,4 +29,15 @@ p{
     font-weight: 400;
     font-size: 25px;
     line-height: 34px;
+}
+
+/* Media queries for even smaller screens */
+@media screen and (max-width: 700px) {
+    body img{
+        padding: 0px 4%;
+    }
+    #phoneHolder{
+        padding: 5px;
+        width: 100%;
+    }
 }

@@ -1,3 +1,6 @@
+body{
+    text-align: left;
+}
 body h1{
     text-align: center;
     font-style: normal;
@@ -15,11 +18,10 @@ body h1{
 }
 
 p{
-    text-indent: 0px;
-    font-size: 1.5625em;
     padding-right: 20px;
     padding-left: 20px;
-    line-height: 33px;
+    font-size: 28px;
+    line-height: 40px;
 }
 #floated{
     width: 310px;

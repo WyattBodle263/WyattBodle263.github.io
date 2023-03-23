@@ -23,18 +23,10 @@ body h3{
     font-size: 24px;
     line-height: 30px;
 }
-body ul{
-    padding: 0 20px;
+.ulist{
+    width: 75%;
+    margin: 0 auto;
 }
-body .workExp ul{
-    margin: 5px;
-    padding-top: 10px;
-    font-size: 22px;
-    line-height: 28px;
-}
-.workExp li{
-    text-align: left;
-}
-.workExp li:not(:last-child) {
-    margin-bottom: 10px;
+.ulist li{
+    padding: 10px 0px;
 }

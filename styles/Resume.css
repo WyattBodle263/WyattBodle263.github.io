@@ -1,13 +1,20 @@
+body{
+    text-align: center;
+}
 #resumeImg{
     width: 100%;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 @media print {
-
     head, header, .print-button, .resume {
         display: none;
     }
 
+}
+.print-button-container{
+    width: 100%;
 }
 
 .selected{
@@ -40,7 +47,7 @@ button.print-button {
 
 span.print-icon, span.print-icon::before, span.print-icon::after, button.print-button:hover .print-icon::after {
     box-sizing: border-box;
-    background-color: #ddd0c8;
+    background: rgb(227,226,238);
 }
 
 span.print-icon {
@@ -51,7 +58,7 @@ span.print-icon {
 
     width: 60%;
     height: 35%;
-    background: #ddd0c8;
+    background: rgb(227,226,238);
     border-radius: 20% 20% 0 0;
 }
 
@@ -73,7 +80,7 @@ span.print-icon::after {
     left: 12%;
     right: 12%;
     height: 0%;
-    background: #fff;
+    background: rgb(227,226,238);
     background-repeat: no-repeat;
     background-size: 70% 90%;
     background-position: center;
