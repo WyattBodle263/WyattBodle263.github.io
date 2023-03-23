@@ -10,6 +10,7 @@ body{
 @media print {
     head, header, .print-button, .resume {
         display: none;
+        background: white;
     }
 
 }
