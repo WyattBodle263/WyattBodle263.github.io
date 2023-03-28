@@ -23,6 +23,7 @@ body a{
     text-align: center;
 }
 #phoneHolder{
+    padding-top: 20px;
     margin-left: auto;
     margin-right: auto;
     width: 90%;
@@ -34,11 +35,7 @@ body a{
 #brew{
     padding-left: 3.5%;
 }
-.container{
-    padding-top: 0px;
-    padding-right: 10px;
-    width: 100%;
-}
+
 
 p{
     padding: 0 20px;
@@ -74,23 +71,31 @@ p{
     float: left;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 700px) {
     h1, h2, h3{
         text-align: center;
     }
+    .container{
+        text-align: center; /* Center inner div horizontally */
+    }
     #floated, #floatedLeft, #floatedRight{
-        margin-right: auto;
-        margin-left: auto;
-        width: 90%;
+        float: left; /* Float inner div to the left */
+        width: 100%; /* Set a width for the inner div */
+        padding: 0 20px; /* Add 20px padding on either side */
+        box-sizing: border-box; /* Include padding in the width calculation */
+
     }
     .roboticsimg{
         width: 100%;
     }
     #alexaCarImg{
-        width: 90%;
+        width: 100%;
+        padding: 0 20px;
     }
     #phoneHolder{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         margin: 0 auto;
         justify-content: center;
     }
