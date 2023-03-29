@@ -1,10 +1,6 @@
 body{
     text-align: center;
 }
-#backbutton{
-    background: lightgray;
-}
-
 body h1{
     margin-top: 5px;
     padding-top: 5px;
@@ -32,6 +28,14 @@ body h1{
 img {
     width: 100%;
 }
+back-button{
+    display: none;
+    text-decoration: none;
+}
+/* Center the back button and h1 together */
+.header-container {
+    display: none;
+}
 
 p{
     text-indent: 50px;
@@ -48,5 +52,25 @@ p{
     .container {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(1, 1fr);
+    }
+    /* Style the back button */
+    .back-button {
+        display: inline-block;
+        float: left;
+        padding: 20px 20px;
+        background-color: #323232;
+        color: rgb(227,226,238);
+        text-decoration: none;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        border-radius: 5px;
+    }
+    h1{
+        margin-top: 0px;
+    }
+    .header-container {
+        display: flex;
+        justify-content: left;
     }
 }

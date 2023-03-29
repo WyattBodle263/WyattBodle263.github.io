@@ -38,6 +38,27 @@ p{
     font-size: 30px;
     line-height: 34px;
 }
+/* Style the back button */
+.back-button {
+    display: inline-block;
+    float: left;
+    padding: 20px 20px;
+    background-color: #323232;
+    color: rgb(227,226,238);
+    text-decoration: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    border-radius: 5px;
+}
+h1{
+    margin-top: 0px;
+}
+.header-container {
+    display: flex;
+    justify-content: left;
+}
+
 @media (max-width: 800px) {
     body{
         text-align: center;
@@ -47,5 +68,12 @@ p{
         padding: 10px 20px;
         float: left;
     }
-
+    back-button{
+        display: none;
+        text-decoration: none;
+    }
+    /* Center the back button and h1 together */
+    .header-container {
+        display: none;
+    }
 }
