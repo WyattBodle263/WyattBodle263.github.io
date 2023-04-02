@@ -1,0 +1,21 @@
+/*makes the image 50% of the width*/
+main img{
+    width: 50%;
+    margin: 0 25%;
+}
+/*indents the paragraph*/
+p{
+    margin: 10px 20px;
+    text-indent: 2em;
+}
+main h1{
+    margin-top: 5px;
+    padding-top: 5px;
+
+    font-family: 'Viga';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 86px;
+    text-align: center;
+}

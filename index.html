@@ -1,53 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wyatt Bodle | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/navBar.css">
-    <link rel="stylesheet" href="Styles/Normalize.css">
-
+    <link rel="stylesheet" href="styles/page-template.css">
 </head>
-
 <body>
-<!-- Navigation Bar -->
-<nav>
-    <div class="logo">
-        Wyatt Bodle
-    </div>
-    <ul>
-        <li><a href="index.html" class="selected">Home</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="AboutMe.html">About Me</a></li>
-        <li><a href="WorkExperience.html">Work Experience</a></li>
-        <li><a href="Resume.html" class="resume">Resume</a></li>
-    </ul>
-</nav>
+<div class="grid-container">
+    <!--        div for menu-->
+    <menu>
+        <div id="name-container">
+        <h1>Wyatt Bodle</h1>
+        <h2>Computer Science Student</h2>
+        </div>
+        <div class="menu-item-container">
+            <!--        four main tabs-->
+            <div class="menu-item"><a href="index.html" class="selected">Home</a></div>
+            <div class="menu-item"><a href="projects.html">Projects</a></div>
+            <div class="menu-item" id="work-experience"><a href="work-experiences.html">Work Experience</a></div>
+            <div class="menu-item" id="experience"><a href="work-experiences.html">Experience</a></div>
+            <div class="menu-item"><a href="resume.html">Resume</a></div>
+            <!--        about me-->
+            <div class="menu-item"> <a href="about-me.html">About Me</a></div>
+            <!--        links to my websites-->
+        </div>
+        <div class="link-container">
+            <div id="mail-image"><a href="mailto:wyattbodle2025@outlook.com"><img src="images/mail.png" alt="mailImg" width="40px"></a></div>
+            <div id="linkedin-image"><a href="https://www.linkedin.com/in/wyatt-bodle-b0167b253" target="_blank"><img src="images/linkedin.png" alt="emailImg" width="40px"></a></div>
+        </div>
+    </menu>
+    <main>
+        <div id="text-container">
+            <!-- Main -->
+            <h1>Welcome to my website!</h1>
+            <h2><u>Wyatt Bodle</u></h2>
+            <h3>California Baptist University - BS, Computer Science est. April 25, 2025</h3>
+            <p>I'm excited to have you here and to share my work with you. As you browse through my projects and experiences, I hope you get a sense of what I'm passionate about and what I can bring to the table as a computer scientist. Thanks for stopping by, and I hope to connect with you soon!</p>
+        </div>
+    </main>
 
-<!-- Body -->
-<div class="container">
-    <h1>Welcome to my website!</h1>
-    <h2><u>Wyatt Bodle</u></h2>
-    <h3>California Baptist University - BS, Computer Science est. April 25, 2025</h3>
-    <p>I'm excited to have you here and to share my work with you. As you browse through my projects and experiences, I hope you get a sense of what I'm passionate about and what I can bring to the table as a computer scientist. Thanks for stopping by, and I hope to connect with you soon!</p>
-    <div class="buttons">
-        <a href="https://www.linkedin.com/in/wyatt-bodle-b0167b253" target="_blank">
-            <img src="images/linkedin.png" alt="LinkedIn" width="80px">
-        </a>
-        <a href="mailto:wyattbodle2025@outlook.com">
-            <img src="images/Mail.png" alt="Email" width="80px">
-        </a>
-    </div>
 </div>
-
 </body>
-
 </html>
