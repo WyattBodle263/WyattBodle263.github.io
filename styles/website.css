@@ -37,3 +37,8 @@ p{
     display: inline-block;
     margin-right: 10px;
 }
+
+img{
+    width: 90%;
+    margin: 5px 5%;
+}
