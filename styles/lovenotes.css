@@ -1,6 +1,5 @@
 body{
     width: 100%;
-    text-align: left;
 }
 
 video{
@@ -27,23 +26,4 @@ p{
     font-weight: 400;
     font-size: 30px;
     line-height: 34px;
-}
-
-@media (max-width: 800px) {
-    body{
-        text-align: center;
-    }
-    #floated{
-        width: 100%;
-        padding: 10px 20px;
-        float: left;
-    }
-    back-button{
-        display: none;
-        text-decoration: none;
-    }
-    /* Center the back button and h1 together */
-    .header-container {
-        display: none;
-    }
 }

@@ -1,3 +1,4 @@
+
 body{
     text-align: center;
 }
@@ -10,6 +11,7 @@ main h1{
     line-height: 86px;
     text-align: center;
 }
+/*Container for the images to be lines up side by side*/
 .container-brew {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

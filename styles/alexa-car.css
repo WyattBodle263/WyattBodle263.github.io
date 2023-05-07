@@ -1,4 +1,4 @@
-/*makes the image 50% of the width*/
+/*makes the image 80% of the width and 10% in either side*/
 main img{
     width: 80%;
     margin: 0 10%;
