@@ -8,596 +8,450 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="Wyatt Bodle Website Portfolio | Computer Science B.S. Exp. 2025" />
+  <meta name="keywords" content="Wyatt Bodle, Computer Science, Software Engineer, USC, Portfolio, Machine Learning" />
+  <meta name="description" content="Wyatt Bodle — Software Engineer building software, automations, and technology systems. Computer Science M.S. student at USC." />
   <meta name="author" content="Wyatt Bodle" />
 
-  <title>Wyatt Bodle</title>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Wyatt Bodle | Software Engineer" />
+  <meta property="og:description" content="Software Engineer building software, automations, and technology systems. Computer Science M.S. student at USC." />
+  <meta property="og:image" content="images/my-photo.jpg" />
 
-  <!-- slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <title>Wyatt Bodle | Software Engineer</title>
 
-  <!-- bootstrap core css -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230a0b0d'/%3E%3Ctext x='32' y='42' font-family='JetBrains Mono,monospace' font-size='24' font-weight='700' fill='%233ee8b5' text-anchor='middle'%3EWB%3C/text%3E%3C/svg%3E" />
+
+  <!-- bootstrap core css (grid utilities used by legacy sub-pages) -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
-  <!-- Custom styles for this template -->
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <script>
+    (function () {
+      var stored = localStorage.getItem("wb-theme");
+      var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", stored || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
 </head>
 
 <body>
 
+  <!-- mobile-only top bar (hidden on wide screens, sidebar takes over) -->
   <div class="hero_area">
-    <!-- header section strats -->
-    <header class="header_section">
+    <header class="header_section mobile_header">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
           <a class="navbar-brand" href="index.html">
-            <span>
-              Wyatt Bodle
-            </span>
+            <span>Wyatt Bodle</span>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="s-1"> </span>
             <span class="s-2"> </span>
             <span class="s-3"> </span>
           </button>
-
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-              <ul class="navbar-nav  ">
-                <li class="nav-item">
-                  <a class="nav-link" href="#experience"> Experience </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#about"> About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#projects"> Projects </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#leadership"> Leadership </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#publications"> Publications </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#resume"> Resume </a>
-                </li>
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#leadership">Leadership</a></li>
+                <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
               </ul>
             </div>
           </div>
         </nav>
       </div>
     </header>
-    <!-- end header section -->
-    <!-- slider section -->
-    <section class=" slider_section ">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 ">
-            <div class="detail_box">
-              <h1 id="home">
-                Wyatt Bodle <br>
-                Computer Science B.S.<br>
-                Est. 2025
-              </h1>
-              <p>
-                I'm Wyatt Bodle, a dedicated Computer Science student from Victorville with a notable 3.75 GPA at California Baptist University and a blossoming background in technology and programming, sparked during the challenging times of the Covid-19 pandemic through self-taught Swift iOS development. My academic prowess in Python, C++, and Java is complemented by practical experience as a Programming Instructor at Coding Minds Academy, where I refined my talent for mentoring and teaching. As President of the ACM Club, I've honed leadership and team collaboration, steering the group towards competitive success. Passionate about computer science and driven by a commitment to excellence, I'm eager to bring my skills and enthusiasm to new opportunities in software development.
-              </p>
-              <a href="#contact" class="">Contact Me</a>
-            </div>
-          </div>
-          <div class="col-lg-5 col-md-6 offset-lg-1">
-            <div class="img_content">
-              <div class="img_container">
-                <div id="" class="" data-ride="">
-                  <div class="">
-                    <div class="">
-                      <div class="img-box">
-                        <img src="images/my-photo.jpg" alt="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end slider section -->
   </div>
 
-
-  <!-- service section -->
-  <section class="service_section layout_padding" id="education">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Education
-        </h2>
+  <div class="layout">
+    <!-- ============ SIDEBAR ============ -->
+    <aside class="sidebar">
+      <div class="sidebar-top">
+        <div class="sidebar-avatar">
+          <img src="images/my-photo.jpg" alt="Wyatt Bodle">
+        </div>
+        <a href="index.html" class="sidebar-name">Wyatt Bodle</a>
+        <p class="sidebar-role"><span class="dot"></span>Software Engineer</p>
+        <p class="sidebar-bio">
+          I build software, internal automations, and full technology systems &mdash; currently at Resolvem, and pursuing an M.S. in Computer Science (AI) at USC.
+        </p>
+        <nav class="side-nav">
+          <a href="#about" data-section="about"><span class="side-nav-line"></span>About</a>
+          <a href="#experience" data-section="experience"><span class="side-nav-line"></span>Experience</a>
+          <a href="#education" data-section="education"><span class="side-nav-line"></span>Education</a>
+          <a href="#projects" data-section="projects"><span class="side-nav-line"></span>Projects</a>
+          <a href="#leadership" data-section="leadership"><span class="side-nav-line"></span>Leadership</a>
+          <a href="#publications" data-section="publications"><span class="side-nav-line"></span>Publications</a>
+          <a href="#resume" data-section="resume"><span class="side-nav-line"></span>Resume</a>
+        </nav>
       </div>
-
-      <div class="service_container">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/usc.png" class="img1" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                University of Southern California 
-              </h5>
-              <p>
-                Master of Computer Science - Artificial Intelligence | August 2025 - May 2027
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="img-box">
-              <img src="images/cbuWhite.png" class="img1" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                California Baptist University
-              </h5>
-              <p>
-                Bachelor of Computer Science | September 2021 - April 2025
-              </p>
-            </div>
-          </div>
-    </div>
-  </section>
-  <!-- end service section -->
-
-  <!-- service section -->
-  <section class="service_section layout_padding" id="experience">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Work Experience
-        </h2>
-      </div>
-
-      <div class="service_container">
-        <a href="nsin.html">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/nsin.png" class="img1" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                X-Force Fellowship
-              </h5>
-              <p>
-                National Security Innovation Network | May 2024 - August 2024
-              </p>
-            </div>
-          </div>
-        </a>
-          <div class="box">
-            <div class="img-box">
-              <img src="images/cbuWhite.png" class="img1" alt="">
-            </div>
-            <div class="detail-box">
-              <h5>
-                Research Assistant
-              </h5>
-              <p>
-                California Baptist University Machine Learning & AI Lab | January 2024 - Present
-              </p>
-            </div>
-          </div>
-        <a href="coding_minds.html">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/CodingMinds.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Programming Instructor
-            </h5>
-            <p>
-              Coding Minds Academy | May 2023 - Present
-            </p>
-          </div>
-        </div>
-        </a>
-        <a href="tutor.html">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/cbuWhite.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Software Engineering Tutor
-            </h5>
-            <p>
-              California Baptist University | August 2023 - Present
-            </p>
-          </div>
-        </div>
-        </a>
-        <a href="recreation.html">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/cbuWhite.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Recreation Intramural Intern
-            </h5>
-            <p>
-              California Baptist University | August 2021 - April 2024
-            </p>
-          </div>
-        </div>
-        </a>
-        <a href="ta.html">
-        <div class="box ">
-          <div class="img-box">
-            <img src="images/cbuWhite.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Teaching Assistant
-            </h5>
-            <p>
-              California Baptist University | October 2023 - Present    </p>
-          </div>
-        </div>
-        </a>
-        <a href="csa.html">
-        <div class="box">
-          <div class="img-box">
-            <img src="images/cbuWhite.png" class="img1" alt="">
-          </div>
-          <div class="detail-box">
-            <h5>
-              Customer Service Associate
-            </h5>
-            <p>
-              California Baptist University | August 2021 - May 2023 </p>
-          </div>
-        </div>
-        </a>
-      </div>
-    </div>
-  </section>
-  <!-- end service section -->
-
-  <!-- about section -->
-  <section class="about_section layout_padding" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Me
-              </h2>
-            </div>
-            <p>
-              I'm Wyatt Bodle, originally from Victorville, California, where my curiosity about the workings of everything from gadgets to software first took root. Amid the pandemic, I turned this curiosity towards technology, teaching myself Swift iOS development and nurturing a growing passion for problem-solving. Now, with my sights set on a degree in computer science and engineering, I am excited to embrace the challenges and innovations that lie ahead in my tech journey.
-            </p>
-            <a href="about.html">
-              Read More
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="img_container">
-            <div class="img-box b1">
-              <img src="images/triplet.jpg" alt="" />
-            </div>
-            <div class="img-box b2">
-              <img src="images/family.jpg" alt="" />
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- end about section -->
-  <section class="blog_section layout_padding" id="projects">
-    <div class="container">
-      <div class="heading_container">
-        <h2>Projects</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <a href="NatureSense.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/NatureSense.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Research Project Animal/Plant Classification - November 2023</h5>
-                <p>
-                  Led a team in research of Animal/Plant Classification while designing an iOS and Android application to help with the research.  Using Tflite we built a fully functional Animal and Plant classification app to help users identify and learn about different organisms.
-                </p>
-              </div>
-            </div>
+      <div class="sidebar-bottom">
+        <div class="sidebar-socials">
+          <a href="https://github.com/WyattBodle263" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
           </a>
-        </div>
-        <div class="col-md-6">
-          <a href="theresa.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/sleep-cover.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Research Project Sleep App & Sensor - July 2023</h5>
-                <p>
-                  I had the privilege of leading the team in the development of a groundbreaking sleep improvement application. Leveraging Flutter, we ensured a cross-platform, aesthetically pleasing, and seamless user experience, accessible to both Android and iPhone users.
-                </p>
-              </div>
-            </div>
+          <a href="https://www.linkedin.com/in/wyatt-bodle/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+          </a>
+          <a href="mailto:wyattbodle2025@outlook.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
           </a>
         </div>
       </div>
-      <div class="row">
-        <!-- Repeat the same structure for the remaining items -->
-        <div class="col-md-6">
-          <a href="robotics.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/Lancer%20Robot.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>VEX-U Lancer Robot - September 2022</h5>
-                <p>
-                  For the competition, I was on the software development team but also assisted the mechanical team with repairs and implementing new parts to solve problems. With only 30 minutes between each run, it was crucial to work efficiently and effectively to make any necessary adjustments to the robot. Through these experiences, I gained a deeper understanding of the mechanical aspects of robotics and the importance of collaboration between the computer and mechanical teams.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="wyattbodle.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/Website.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>wyattbodle.com Portfolio Website - March 2023</h5>
-                <p>
-                  Creating a portfolio website can be an exciting and rewarding experience, as it allows you to showcase your skills and accomplishments to potential employers or clients. When creating my own portfolio website, I started by brainstorming the key features and content that I wanted to include, such as my resume, project examples, and contact information. I also considered the overall design and aesthetic that I wanted to achieve, taking into account factors such as color scheme, typography, and layout.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <a href="brewbuddy.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/brewbuddy.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Brew Buddy App - January 2019</h5>
-                <p>
-                  Introducing "Brew Buddy", the perfect app for all coffee enthusiasts, allowing the user to store a comprehensive database of coffee shops with their prices, locations, and more. With Brew Buddy, you can easily find and save your favorite coffee shops, rate them, and review them, so you have all your favorite coffee spots at the touch of a button. The app also features a map view, allowing you to easily locate the coffee shops and plan your coffee runs.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="lovenotes.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/LoveNotes.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Love Notes App - May 2019</h5>
-                <p>
-                  Introducing "LoveNotes", the ultimate app designed for couples to stay connected and plan date night ideas with ease. With its user-friendly interface, couples can send messages and make plans, ensuring that they are always on the same page. Plus, with the app's built-in timer, couples can keep track of their relationship milestones down to the seconds, making it easy to celebrate every moment of their journey together.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <a href="pk.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/PKShootout.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>PK Shootout App - January 2019</h5>
-                <p>
-                  PK Shootout is an enjoyable app that puts your penalty kick skills to the test against a virtual goalkeeper. Swipe to shoot the ball and see if you can score past the keeper who dives or stays in the middle. Swipe one of three ways to choose your direction and the faster you swipe the harder your kick. The app brings the game to life and creates an immersive soccer atmosphere. Whether you're a die-hard soccer fan or just looking for a fun way to pass the time, PK Shootout is the perfect app for you.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="swish.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/SwishStats.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Swish Stats App - May 2019</h5>
-                <p>
-                  Swish Stats is the must-have app for basketball players who want to track their performance and compare it with their opponent. Whether you're playing around the world, free throws, or 1v1 basketball competitions, Swish Stats has got you covered. With this app, you can easily track your scores, 3 pointers, free throws, and more, and see how you stack up against your opponent. The app provides an easy way to see who's in the lead and who needs to step up their game. Swish Stats also lets you save your game history, so you can see how you've progressed over time.
-                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-md-6">
-          <a href="alexacar.html">
-            <div class="box">
-              <div class="img-box">
-                <img src="images/alexa.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h5>Amazon Alexa Controlled Robot </h5>
-                <p>
-                  During our EGR101 project, my group successfully built an Alexa-controlled car using an Arduino Uno, an ESP to facilitate the Wi-Fi connection, and a motor controller. The car was able to move forward, backward, left, and right, all controlled by voice commands given through an Alexa device. We encountered several challenges during the project, such as ensuring stable Wi-Fi connectivity and learning the Arduino programming language as well as UI, but ultimately overcame them through teamwork and perseverance.                </p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
+    </aside>
 
+    <!-- ============ MAIN CONTENT ============ -->
+    <main class="main-content" id="home">
 
-  <!-- end blog section -->
-
-  <section class="about_section layout_padding" id="leadership">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                Leadership and Clubs
-              </h2>
-            </div>
-            <p>
-              In 2023, I am proud to announce that I have taken on the role of President of the ACM club, building upon my membership and experiences in 2022. Under my leadership, the ACM club has undergone a transformation, becoming more focused on competition and excellence in the field of computer science. Notably, I have led the Competitive Programming team to compete at the international collegiate programming competition, showcasing our skills on a global stage. In addition to my responsibilities within ACM, I am also actively involved in the Robotics VEX-U competition team at my school, where I continue to apply my passion for technology and innovation. It's an exciting journey, and I'm thrilled to be at the helm of these exciting endeavors.
-            </p>
-          </div>
+      <!-- About -->
+      <section class="content-section" id="about">
+        <div class="section-head">
+          <span class="section-index">00</span>
+          <h2>About</h2>
         </div>
-        <div class="col-md-4">
-          <div class="img_container">
-            <div class="img-box b1">
-              <img src="images/icpc.jpeg" alt="" />
-            </div>
-            <div class="img-box b2">
-              <img src="images/Lancer%20Robot.png" alt="" />
-            </div>
-            <div class="img-box b3">
-              <img src="images/orgs.png" alt="" />
+        <p class="lede">
+          I'm a Software Engineer who builds software, internal automations, and full technology systems end to end &mdash; and I keep the IT running along the way.
+        </p>
+        <p>
+          Originally from Victorville, California, my curiosity about how things work turned into a full-blown pursuit of computer science during the Covid-19 pandemic, when I taught myself Swift iOS development. That grew into a Bachelor's degree in Computer Science from California Baptist University (3.75 GPA) and an ongoing Master's in Computer Science, focused on Artificial Intelligence, at USC. Along the way I've led a competitive programming team as President of the ACM Club and mentored students as a Programming Instructor &mdash; experience that shapes how I approach building and explaining software today.
+        </p>
+        <div class="skills_row">
+          <span class="skill-chip">Python</span>
+          <span class="skill-chip">JavaScript</span>
+          <span class="skill-chip">Next.js</span>
+          <span class="skill-chip">Java</span>
+          <span class="skill-chip">C++</span>
+          <span class="skill-chip">Swift</span>
+          <span class="skill-chip">Automation</span>
+          <span class="skill-chip">Image Processing</span>
+          <span class="skill-chip">Flutter</span>
+          <span class="skill-chip">TensorFlow Lite</span>
+          <span class="skill-chip">Microsoft 365 &amp; IT</span>
+          <span class="skill-chip">Firebase</span>
+          <span class="skill-chip">SQL</span>
+          <span class="skill-chip">Git</span>
+          <span class="skill-chip">Arduino</span>
+          <span class="skill-chip">Engineering Change Orders</span>
+          <span class="skill-chip">Technical Documentation</span>
+          <span class="skill-chip">R&amp;D</span>
+          <span class="skill-chip">Regulated Software (IEC 62304)</span>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section class="content-section" id="experience">
+        <div class="section-head">
+          <span class="section-index">01</span>
+          <h2>Experience</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2025 &mdash; Present</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/resolvem-logo.png" alt="Resolvem">
+                <h3>Software Engineer <span class="timeline-company">@ Resolvem</span></h3>
+              </div>
+              <p>Building software, internal automations, and managing IT &amp; technical operations.</p>
             </div>
           </div>
-
+          <a class="timeline-item" href="nsin.html">
+            <div class="timeline-date">May &mdash; Aug 2024</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/nsin.png" alt="NSIN">
+                <h3>X-Force Fellowship <span class="timeline-company">@ National Security Innovation Network</span></h3>
+              </div>
+              <p>Fellowship program applying technology to national security challenges.</p>
+            </div>
+          </a>
+          <div class="timeline-item">
+            <div class="timeline-date">Jan 2024 &mdash; May 2025</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/cbuWhite.png" alt="CBU">
+                <h3>Research Assistant <span class="timeline-company">@ CBU Machine Learning &amp; AI Lab</span></h3>
+              </div>
+              <p>Research on applied machine learning, contributing to peer-reviewed publications.</p>
+            </div>
+          </div>
+          <a class="timeline-item" href="coding_minds.html">
+            <div class="timeline-date">May 2023 &mdash; May 2025</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/CodingMinds.png" alt="Coding Minds Academy">
+                <h3>Programming Instructor <span class="timeline-company">@ Coding Minds Academy</span></h3>
+              </div>
+              <p>Teaching programming concepts and languages to students of varying skill levels.</p>
+            </div>
+          </a>
+          <a class="timeline-item" href="tutor.html">
+            <div class="timeline-date">Aug 2023 &mdash; May 2025</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/cbuWhite.png" alt="CBU">
+                <h3>Software Engineering Tutor <span class="timeline-company">@ California Baptist University</span></h3>
+              </div>
+              <p>1-on-1 and group tutoring for software engineering coursework.</p>
+            </div>
+          </a>
+          <a class="timeline-item" href="ta.html">
+            <div class="timeline-date">Oct 2023 &mdash; May 2025</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/cbuWhite.png" alt="CBU">
+                <h3>Teaching Assistant <span class="timeline-company">@ California Baptist University</span></h3>
+              </div>
+              <p>Supporting course instruction and grading for computer science classes.</p>
+            </div>
+          </a>
+          <a class="timeline-item" href="recreation.html">
+            <div class="timeline-date">Aug 2021 &mdash; Apr 2024</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/cbuWhite.png" alt="CBU">
+                <h3>Recreation Intramural Intern <span class="timeline-company">@ California Baptist University</span></h3>
+              </div>
+              <p>Coordinated and officiated intramural sports programs on campus.</p>
+            </div>
+          </a>
+          <a class="timeline-item" href="csa.html">
+            <div class="timeline-date">Aug 2021 &mdash; May 2023</div>
+            <div class="timeline-body">
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/cbuWhite.png" alt="CBU">
+                <h3>Customer Service Associate <span class="timeline-company">@ California Baptist University</span></h3>
+              </div>
+              <p>Front-line student services and support.</p>
+            </div>
+          </a>
         </div>
+      </section>
 
-      </div>
-    </div>
-  </section>
-
-  <section class=" layout_padding" id="publications">
-    <div class="container">
-      <div class="heading_container">
-        <h2>Publications</h2>
-      </div>
-      <ul>
-        <li>Chen, D., &; Bodle, W. L. (2023). An intelligent system to enhance mental and physical health through sleep monitoring <br>   and recommendations using motion detection and environmental sensors. <i>Software Engineering and Applications, <br> 13(7).</i> <a href="https://doi.org/10.5121/csit.2023.131706">https://doi.org/10.5121/csit.2023.131706</a></li>
-        <br>
-        <li>Bodle, W. L. (n.d.). Comparative analysis of verbal languages for computing to <br>determine ... COMPUTER SCIENCE & ENGINEERING: AN INTERNATIONAL JOURNAL (CSEIJ). <a href="https://cseij.org/papers/v13n6/13623cseij01.pdf">https://cseij.org/papers/v13n6/13623cseij01.pdf</a></li>
-      </ul>
-    </div>
-  </section>
-
-
-  <!-- service section -->
-  <section class="service_section about_section layout_padding" id="resume">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Resume
-        </h2>
-      </div>
-      <a href="images/resume.png" download>
-        <img src="images/resume.png" width="100%" alt="Resume">
-      </a>
-    </div>
-  </section>
-
-  <!-- info section -->
-
-  <section class="info_section layout_padding" id="contact">
-    <div class="container">
-      <div class="info_contact">
-          <div class="row">
-            <div class="col-md-4">
-            <a href="">
-              <img src="images/location-white.png" alt="">
-              <span>
-                Dana Point, CA 92624
-              </span>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="">
-              <img src="images/telephone-white.png" alt="">
-              <span>
-                Call : (760)-686-5380
-              </span>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="mailto:wyattbodle2025@outlook.com">
-              <img src="images/envelope-white.png" alt="">
-              <span>
-                wyattbodle2025@outlook.com
-              </span>
-            </a>
-          </div>
+      <!-- Education -->
+      <section class="content-section" id="education">
+        <div class="section-head">
+          <span class="section-index">02</span>
+          <h2>Education</h2>
         </div>
-      </div>
-        <div class="col-md-4 col-lg-3">
-          <div class="info_social">
+        <div class="edu-list">
+          <div class="edu-item">
+            <div class="edu-date">2025 &mdash; 2027</div>
             <div>
-              <a href="https://github.com/WyattBodle263">
-                <img src="images/github.png" alt="">
-              </a>
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/usc.png" alt="USC">
+                <h3>University of Southern California</h3>
+              </div>
+              <p>Master of Computer Science &mdash; Artificial Intelligence</p>
             </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-date">2021 &mdash; 2025</div>
             <div>
-              <a href="https://www.linkedin.com/in/wyatt-bodle/">
-                <img src="images/linkedin.png" alt="">
-              </a>
+              <div class="timeline-heading">
+                <img class="timeline-logo" src="images/cbuWhite.png" alt="CBU">
+                <h3>California Baptist University</h3>
+              </div>
+              <p>Bachelor of Computer Science &mdash; 3.75 GPA</p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-    </div>
-  </section>
-
-  <!-- end info section -->
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 col-md-9 mx-auto">
-          <p>
-            &copy; 2023 All Rights Reserved By Wyatt Bodle
-          </p>
+      <!-- Projects -->
+      <section class="content-section" id="projects">
+        <div class="section-head">
+          <span class="section-index">03</span>
+          <h2>Projects</h2>
         </div>
-      </div>
-    </div>
-  </footer>
-  <!-- footer section -->
+        <div class="filter_row">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="automation">Automation</button>
+          <button class="filter-btn" data-filter="research">Research</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="robotics">Robotics</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="hardware">Hardware</button>
+        </div>
+        <div class="project-list">
+          <div class="project-row" data-category="automation">
+            <div class="project-row-top">
+              <span class="project-title">Internal Automation &amp; Tooling</span>
+              <span class="project-tag">Automation</span>
+            </div>
+            <p class="project-desc">
+              Design and build internal automations that cut out repetitive manual work &mdash; scripting data syncs, streamlining reporting, and wiring up integrations between the tools a small business relies on every day, alongside general IT and systems support.
+            </p>
+          </div>
+          <a class="project-row" href="NatureSense.html" data-category="research">
+            <div class="project-row-top">
+              <span class="project-title">Animal/Plant Classification Research<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Research &middot; Nov 2023</span>
+            </div>
+            <p class="project-desc">
+              Led a team researching animal/plant classification while building an iOS and Android app using TFLite to help identify and learn about different organisms.
+            </p>
+          </a>
+          <a class="project-row" href="theresa.html" data-category="research">
+            <div class="project-row-top">
+              <span class="project-title">Sleep App &amp; Sensor Research<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Research &middot; Jul 2023</span>
+            </div>
+            <p class="project-desc">
+              Led development of a sleep improvement application built with Flutter for a seamless, cross-platform experience on Android and iPhone.
+            </p>
+          </a>
+          <a class="project-row" href="robotics.html" data-category="robotics">
+            <div class="project-row-top">
+              <span class="project-title">VEX-U Lancer Robot<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Robotics &middot; Sep 2022</span>
+            </div>
+            <p class="project-desc">
+              Software development team member for competitive robotics, also assisting mechanical repairs under tight in-competition time constraints.
+            </p>
+          </a>
+          <a class="project-row" href="wyattbodle.html" data-category="web">
+            <div class="project-row-top">
+              <span class="project-title">wyattbodle.com Portfolio<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Web &middot; Mar 2023</span>
+            </div>
+            <p class="project-desc">
+              An earlier iteration of this portfolio site &mdash; planning content, design, and layout from scratch.
+            </p>
+          </a>
+          <a class="project-row" href="brewbuddy.html" data-category="mobile">
+            <div class="project-row-top">
+              <span class="project-title">Brew Buddy<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Mobile &middot; Jan 2019</span>
+            </div>
+            <p class="project-desc">
+              An app for coffee enthusiasts to track, rate, and map their favorite coffee shops.
+            </p>
+          </a>
+          <a class="project-row" href="lovenotes.html" data-category="mobile">
+            <div class="project-row-top">
+              <span class="project-title">Love Notes<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Mobile &middot; May 2019</span>
+            </div>
+            <p class="project-desc">
+              An app for couples to message, plan date nights, and track relationship milestones.
+            </p>
+          </a>
+          <a class="project-row" href="pk.html" data-category="mobile">
+            <div class="project-row-top">
+              <span class="project-title">PK Shootout<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Mobile &middot; Jan 2019</span>
+            </div>
+            <p class="project-desc">
+              A swipe-to-shoot penalty kick game against a virtual keeper.
+            </p>
+          </a>
+          <a class="project-row" href="swish.html" data-category="mobile">
+            <div class="project-row-top">
+              <span class="project-title">Swish Stats<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Mobile &middot; May 2019</span>
+            </div>
+            <p class="project-desc">
+              A basketball stat tracker for comparing performance across games and opponents.
+            </p>
+          </a>
+          <a class="project-row" href="alexacar.html" data-category="hardware">
+            <div class="project-row-top">
+              <span class="project-title">Amazon Alexa Controlled Robot<span class="project-arrow">&nbsp;&rarr;</span></span>
+              <span class="project-tag">Hardware</span>
+            </div>
+            <p class="project-desc">
+              A voice-controlled car built with Arduino Uno, an ESP Wi-Fi module, and a motor controller.
+            </p>
+          </a>
+        </div>
+      </section>
 
+      <!-- Leadership -->
+      <section class="content-section" id="leadership">
+        <div class="section-head">
+          <span class="section-index">04</span>
+          <h2>Leadership</h2>
+        </div>
+        <p>
+          President of the ACM Club at California Baptist University, after joining as a member in 2022. I restructured the club around competition and technical excellence, and led our Competitive Programming team to the International Collegiate Programming Contest. I'm also active on the school's VEX-U Robotics competition team.
+        </p>
+        <div class="mini-gallery">
+          <img src="images/icpc.jpeg" alt="ICPC competitive programming team">
+          <img src="images/Lancer%20Robot.png" alt="VEX-U Lancer Robot">
+          <img src="images/orgs.png" alt="ACM Club">
+        </div>
+      </section>
+
+      <!-- Publications -->
+      <section class="content-section" id="publications">
+        <div class="section-head">
+          <span class="section-index">05</span>
+          <h2>Publications</h2>
+        </div>
+        <ul class="pub-list">
+          <li class="pub-item">
+            Chen, D., &amp; Bodle, W. L. (2023). An intelligent system to enhance mental and physical health through sleep monitoring and recommendations using motion detection and environmental sensors. <i>Software Engineering and Applications, 13(7).</i>
+            <br><a href="https://doi.org/10.5121/csit.2023.131706" target="_blank" rel="noopener">doi.org/10.5121/csit.2023.131706</a>
+          </li>
+          <li class="pub-item">
+            Bodle, W. L. (n.d.). Comparative analysis of verbal languages for computing to determine &hellip; <i>Computer Science &amp; Engineering: An International Journal (CSEIJ).</i>
+            <br><a href="https://cseij.org/papers/v13n6/13623cseij01.pdf" target="_blank" rel="noopener">cseij.org/papers/v13n6/13623cseij01.pdf</a>
+          </li>
+          <li class="pub-item">
+            Xiao, A., Li, A., &amp; Bodle, W. (2024). An intelligent plant and animal identification mobile application for increased biodiversity awareness and safety using machine learning. <i>Computer Science &amp; Information Technology (CS &amp; IT), 14(4).</i>
+            <br><a href="https://doi.org/10.5121/csit.2024.140433" target="_blank" rel="noopener">doi.org/10.5121/csit.2024.140433</a>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Resume -->
+      <section class="content-section" id="resume">
+        <div class="section-head">
+          <span class="section-index">06</span>
+          <h2>Resume</h2>
+        </div>
+        <a href="images/resume.png" download class="resume-frame">
+          <img src="images/resume.png" alt="Wyatt Bodle resume">
+          <span class="resume-cta">Click to download &#8595;</span>
+        </a>
+      </section>
+
+      <!-- Contact / footer -->
+      <footer class="closing-section" id="contact">
+        <span class="closing-kicker">Get In Touch</span>
+        <h2 class="closing-heading">Have a project, question, or just want to say hi?</h2>
+        <a href="mailto:wyattbodle2025@outlook.com" class="closing-email">wyattbodle2025@outlook.com</a>
+        <div class="closing-meta">
+          <span>Costa Mesa, CA</span>
+          <span>(760) 686-5380</span>
+          <div class="closing-socials">
+            <a href="https://github.com/WyattBodle263" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 2.9-.39c.98 0 1.97.13 2.9.39 2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.5 12c0-6.35-5.15-11.5-11.5-11.5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/wyatt-bodle/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+            </a>
+          </div>
+        </div>
+        <p style="margin-top:48px;font-family:var(--font-mono);font-size:12px;color:var(--text-faint);">&copy; 2026 Wyatt Bodle</p>
+      </footer>
+
+    </main>
+  </div>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 
